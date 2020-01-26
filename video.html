@@ -1,0 +1,60 @@
+<html class="mdl-js"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css"></head><body data-gr-c-s-loaded="true">\
+    <link href="https://fonts.googleapis.com/css?family=Overpass|Staatliches&amp;display=swap" rel="stylesheet">
+    <title>ASL Translator</title>
+    <!-- update the version number as needed -->
+    <script defer="" src="/__/firebase/4.8.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer="" src="/__/firebase/4.8.1/firebase-auth.js"></script>
+    <script defer="" src="/__/firebase/4.8.1/firebase-database.js"></script>
+    <script defer="" src="/__/firebase/4.8.1/firebase-messaging.js"></script>
+    <script defer="" src="/__/firebase/4.8.1/firebase-storage.js"></script>
+    <script defer="" src="/__/firebase/4.8.1/firebase-firestore.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-firestore.js"></script> -->
+    <script defer="" src="/__/firebase/init.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-light_blue.min.css">
+    <script defer="" src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+
+        <div class="logo">
+          <div id="logo">
+            <a href="index.html">
+              <img src="assets/img/signum-2.png" alt="">
+            </a>
+          </div>
+        </div>
+        <nav class="mdl-navigation upload-btn">
+            <input type="file" id="cloud-upload" multiple="" accept="image/*" style="display:none">
+            <button id="file-select">
+              <a><h2>Upload a Photo</h2></a>
+            </button>
+        </nav>
+        <div class="mdl-cell">
+          <div id="progress-bar" class="mdl-progress mdl-js-progress is-upgraded" data-upgraded=",MaterialProgress"><div class="progressbar bar bar1" style="width: 0%;"></div><div class="bufferbar bar bar2" style="width: 100%;"></div><div class="auxbar bar bar3" style="width: 0%;"></div></div>
+          <p id="status"></p>
+        </div>
+
+            <div class="mdl-grid">
+              <div class="mdl-layout-spacer"></div>
+              <div class="mdl-cell mdl-cell--5-col">
+                  <div class="demo-card-wide mdl-card mdl-shadow--2dp" id="card">
+                      <div class="mdl-card__supporting-text" id="prediction-text">
+                      </div>
+                      <div class="mdl-card__title" id="img-predicted">
+                      </div>
+                      <div class="mdl-card__actions mdl-card--border" id="weather-summary">
+                      </div>
+
+                    </div>
+              </div>
+              <div class="mdl-layout-spacer"></div>
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+
+
+</body></html>
